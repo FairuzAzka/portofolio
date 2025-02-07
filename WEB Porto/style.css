@@ -220,6 +220,93 @@ aside img:hover {
     font-size: 1.2rem;
 }
 
+/* penyesuaian untuk tampilan mobile */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ukuran font lebih kecil untuk mobile */
+    }
+
+    nav .container {
+        flex-direction: column; /* Menu navigasi diatur vertikal */
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu navigasi diatur vertikal */
+        gap: 10px;
+    }
+
+    main .container {
+        flex-direction: column; /* Konten diatur vertikal */
+        padding: 10px;
+    }
+
+    aside {
+        order: -1; /* Pindahkan aside ke atas */
+        margin-bottom: 20px;
+    }
+
+    aside img {
+        width: 150px; /* Ukuran gambar lebih kecil */
+        height: 150px;
+    }
+
+    article {
+        padding: 1rem; /* Padding lebih kecil */
+    }
+
+    .box {
+        padding: 1rem; /* Padding lebih kecil */
+    }
+
+    .box h4 {
+        font-size: 1.2rem; /* Ukuran font judul lebih kecil */
+    }
+
+    .box p {
+        font-size: 0.9rem; /* Ukuran font paragraf lebih kecil */
+    }
+
+    .source-code-button {
+        padding: 8px 16px; /* Padding tombol lebih kecil */
+        font-size: 0.9rem; /* Ukuran font tombol lebih kecil */
+    }
+
+    .tech-carousel {
+        max-width: 100%; /* Lebar carousel penuh */
+        padding: 0.5rem 0;
+    }
+
+    .tech-track i {
+        font-size: 2rem; /* Ukuran ikon lebih kecil */
+    }
+
+    footer .container {
+        padding: 20px 10px; /* Padding footer lebih kecil */
+    }
+
+    .contact-links {
+        flex-direction: column; /* Tombol kontak diatur vertikal */
+        gap: 10px;
+    }
+
+    .contact-button {
+        width: 100%; /* Tombol kontak penuh lebar */
+        justify-content: center;
+    }
+
+    .floating-cv-button {
+        width: 50px; /* Ukuran tombol melayang lebih kecil */
+        height: 50px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .floating-cv-button i {
+        font-size: 1.2rem; /* Ukuran ikon tombol melayang lebih kecil */
+    }
+}
+
 @media screen and (max-width: 768px) {
     main .container {
         flex-direction: column;
@@ -273,7 +360,7 @@ aside img:hover {
 }
 
 
-/* Gaya untuk Tech Stack Carousel */
+/* untuk Tech Stack Carousel */
 .tech-carousel {
     overflow: hidden;
     position: relative;
